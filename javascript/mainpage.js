@@ -12,7 +12,7 @@ function setStatusMessage(message){
 function resolvePalindrom(){
     var text = getInputText();
     if(text){
-        var isPalindrom = palindrom.testPalindrome(text);
+        var isPalindrom = testPalindrome(text);
         if(isPalindrom){
             setStatusMessage("Your input text is palindrome.");
         } else {

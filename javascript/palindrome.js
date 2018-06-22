@@ -3,7 +3,7 @@
  * @param text : string
  * @returns {boolean}
  */
-function testPalindrom(text){
+function testPalindrome(text){
     text = normalizeText(text);
     if(text && text.length > 0) {
         for (var i = 0; i < text.length; i++) {
@@ -33,7 +33,7 @@ function normalizeText(text){
 
 if(typeof module !== 'undefined'){
     module.exports = {
-        testPalindrome : testPalindrom,
+        testPalindrome : testPalindrome,
         normalizeText : normalizeText
     }
 }
