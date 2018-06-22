@@ -1,0 +1,19 @@
+.center {
+    margin: auto;
+    text-align: center;
+}
+#input-button {
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    border: green;
+    width: 10em;
+    height: 2em;
+    font-size: 1.5em;
+}
+#input-text {
+    width: 20em;
+}
+form > *{
+    padding: 1ex;
+}

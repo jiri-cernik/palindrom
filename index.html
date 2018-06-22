@@ -2,34 +2,14 @@
 <html>
 	<head>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script src="javascript/palindrom.js"></script>
-		<style>
-			.center {
-				margin: auto;
-                text-align: center;
-			}
-            #input-button {
-                background-color: green;
-                color: white;
-                border-radius: 5px;
-                border: green;
-                width: 10em;
-                height: 2em;
-                font-size: 1.5em;
-            }
-            #input-text {
-                width: 20em;
-            }
-			form > *{
-				padding: 1ex;
-			}
-		</style>
-		<title>Palindrom finder</title>
+		<script src="javascript/mainpage.js"></script>
+		<link href="style.mainpage.css" rel="stylesheet" type="text/css">
+		<title>Palindrome finder</title>
 	</head>
 	<body>
 		<h1 class="center">Palindrome finder</h1>
-		<form action="javascript:" onsubmit="validatePalindrom()" class="center">
-			Insert your text:<br><input type="text" id="input-text"><br>
+		<form action="javascript:" onsubmit="resolvePalindrom()" class="center">
+			<span>Insert your text:</span><br><input type="text" id="input-text"><br>
 			<button id="input-button" type="submit">Validate</button>
 		</form>
 		<div id="status-message" class="center">Awaiting your text sir/madam.</div><br>
