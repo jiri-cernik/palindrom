@@ -7,9 +7,9 @@
     "jshint": "^2.6.0"
   },
   "scripts": {
-    "test": "jshint palindrom.js",
-    "test": "jshint test.js",
-    "test": "node test.js"
+    "test": "jshint javascript/palindrome.js",
+    "test": "jshint javascript/test.js",
+    "test": "node javascript/test.js"
   },
   "devDependencies": {
     "qunit-tap": "^1.5.0",
