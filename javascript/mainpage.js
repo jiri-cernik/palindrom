@@ -5,7 +5,12 @@ function getInputText(){
     return $(inputTextFieldID).val();
 }
 
-function setStatusMessage(message){
+function setStatusMessage(message,background){
+    if(!background){
+        $(statusMessageElementID).css("background-color","white");
+    } else {
+        $(statusMessageElementID).css("background-color",background);
+    }
     $(statusMessageElementID).text(message);
 }
 
@@ -14,11 +19,11 @@ function resolvePalindrom(){
     if(text){
         var isPalindrom = testPalindrome(text);
         if(isPalindrom){
-            setStatusMessage("Your input text is palindrome.");
+            setStatusMessage("Your input text is palindrome.","lime");
         } else {
-            setStatusMessage("Your input text isn't palindrome.");
+            setStatusMessage("Your input text isn't palindrome.","red");
         }
     } else {
-        setStatusMessage("Please insert not empty string into the text field.");
+        setStatusMessage("Please insert not empty string into the text field.",null);
     }
 }

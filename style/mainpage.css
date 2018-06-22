@@ -2,6 +2,11 @@
     margin: auto;
     text-align: center;
 }
+
+h1 {
+    font-family: monospace;
+}
+
 #input-button {
     background-color: green;
     color: white;
@@ -10,10 +15,16 @@
     width: 10em;
     height: 2em;
     font-size: 1.5em;
+    margin-top: 10px;
 }
+
 #input-text {
-    width: 20em;
+    font-family: monospace;
+    font-size: large;
 }
-form > *{
-    padding: 1ex;
+
+#status-message {
+    font-size: x-large;
+    margin-top: 10px;
+    display: inline-block;
 }

@@ -10,9 +10,11 @@
 	<body>
 		<h1 class="center">Palindrome finder</h1>
 		<form action="javascript:" onsubmit="resolvePalindrom()" class="center">
-			<span>Insert your text:</span><br><input type="text" id="input-text"><br>
+			<br><textarea id="input-text" placeholder="Insert your text here..." rows="10" cols="50"></textarea><br>
 			<button id="input-button" type="submit">Validate</button>
 		</form>
-		<div id="status-message" class="center">Awaiting your text sir/madam.</div><br>
+		<div class="center">
+			<span id="status-message" class="center">Awaiting your text sir/madam.</span><br>
+		</div>
 	</body>
 </html>
